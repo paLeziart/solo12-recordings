@@ -40,4 +40,6 @@ Fields in recordings:
 * log_qdes : desired positions for the 12 actuators (output of whole body control)
 * log_vdes : desired velocities torques for the 12 actuators (output of whole body control)
 
-Desired torques are tau = tau_ff + P * (qdes - q_mes) + D * (vdes - v_mes). Sadly I forgot to log P and D values when I did the recordings, I think I used P = 6.0 and D = 0.2. 
+Desired torques are `tau = tau_ff + P * (qdes - q_mes) + D * (vdes - v_mes)`. Sadly I forgot to log P and D values when I did the recordings, I think I used `P = 6.0` and `D = 0.2`. 
+
+To access the data you need to unzip the recordings. Then you can read the logs with Numpy for instance with `data = np.load("experiment_walk_1.npz")` and then `q_mes = data["q_mes"]`.
