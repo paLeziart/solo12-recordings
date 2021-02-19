@@ -28,7 +28,7 @@ Fields in recordings:
 * mocapOrientationQuat : orientation of the base in the motion capture frame and measured with motion capture system (ground truth), expressed as a quaternion
 * estimatorVelocity : linear velocity of the base in base frame and estimated by the state estimator of the controller
 * contactStatus : desired contact status of feet (1: stance phase, 0: swing phase)
-* referenceVelocity : reference velocity that the robot should follow, expressed in base frame (Vx, Vy, Vz, Wroll, Wpitch, Wyaw)
+* referenceVelocity : reference velocity that the robot should follow, expressed in base frame (Vx, Vy, Vz, Wroll, Wpitch, Wyaw). Controlled manually with a joystick during the experiments.
 * tstamps : timestamps of the logging process (control runs at 500 Hz so roughly 0.002s between each log)
 * log_feet_pos : estimated position of feet in world frame (x,y,z) for (FL, FR, HL, HR) feet
 * log_feet_pos_target : desired position of feet in world frame (x,y,z) for (FL, FR, HL, HR) feet
